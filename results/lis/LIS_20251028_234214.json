@@ -1,0 +1,470 @@
+[
+  {
+    "experiment": "LIS",
+    "parameter": 5,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 2,
+    "metrics": {
+      "execution_time": 8.39999847812578e-06,
+      "operations_count": 18,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183499"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 5,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 2,
+    "metrics": {
+      "execution_time": 3.953005943913013e-06,
+      "operations_count": 18,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183514"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 5,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 2,
+    "metrics": {
+      "execution_time": 2.540000423323363e-06,
+      "operations_count": 18,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183519"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 5,
+    "algorithm": "LIS (PD)",
+    "repetition": 1,
+    "result": 2,
+    "metrics": {
+      "execution_time": 4.478999471757561e-06,
+      "operations_count": 16,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183529"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 5,
+    "algorithm": "LIS (PD)",
+    "repetition": 2,
+    "result": 2,
+    "metrics": {
+      "execution_time": 3.3530013752169907e-06,
+      "operations_count": 16,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183534"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 5,
+    "algorithm": "LIS (PD)",
+    "repetition": 3,
+    "result": 2,
+    "metrics": {
+      "execution_time": 2.1360028767958283e-06,
+      "operations_count": 16,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183539"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 7,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 3,
+    "metrics": {
+      "execution_time": 6.681002560071647e-06,
+      "operations_count": 59,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183600"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 7,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 3,
+    "metrics": {
+      "execution_time": 5.292000423651189e-06,
+      "operations_count": 59,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183610"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 7,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 3,
+    "metrics": {
+      "execution_time": 5.12100086780265e-06,
+      "operations_count": 59,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183617"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 7,
+    "algorithm": "LIS (PD)",
+    "repetition": 1,
+    "result": 3,
+    "metrics": {
+      "execution_time": 4.187000740785152e-06,
+      "operations_count": 35,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183624"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 7,
+    "algorithm": "LIS (PD)",
+    "repetition": 2,
+    "result": 3,
+    "metrics": {
+      "execution_time": 3.0279989005066454e-06,
+      "operations_count": 35,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183629"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 7,
+    "algorithm": "LIS (PD)",
+    "repetition": 3,
+    "result": 3,
+    "metrics": {
+      "execution_time": 2.911998308263719e-06,
+      "operations_count": 35,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183634"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 9,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 3,
+    "metrics": {
+      "execution_time": 9.568000677973032e-06,
+      "operations_count": 93,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183691"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 9,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 3,
+    "metrics": {
+      "execution_time": 7.828995876479894e-06,
+      "operations_count": 93,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183701"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 9,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 3,
+    "metrics": {
+      "execution_time": 7.296999683603644e-06,
+      "operations_count": 93,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183711"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 9,
+    "algorithm": "LIS (PD)",
+    "repetition": 1,
+    "result": 3,
+    "metrics": {
+      "execution_time": 5.365000106394291e-06,
+      "operations_count": 53,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183719"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 9,
+    "algorithm": "LIS (PD)",
+    "repetition": 2,
+    "result": 3,
+    "metrics": {
+      "execution_time": 4.301997250877321e-06,
+      "operations_count": 53,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183725"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 9,
+    "algorithm": "LIS (PD)",
+    "repetition": 3,
+    "result": 3,
+    "metrics": {
+      "execution_time": 4.21699951402843e-06,
+      "operations_count": 53,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183731"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 11,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 5,
+    "metrics": {
+      "execution_time": 2.806800330290571e-05,
+      "operations_count": 344,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183799"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 11,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 5,
+    "metrics": {
+      "execution_time": 2.502599818399176e-05,
+      "operations_count": 344,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183826"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 11,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 5,
+    "metrics": {
+      "execution_time": 2.4682005459908396e-05,
+      "operations_count": 344,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183853"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 11,
+    "algorithm": "LIS (PD)",
+    "repetition": 1,
+    "result": 5,
+    "metrics": {
+      "execution_time": 7.3549963417463005e-06,
+      "operations_count": 83,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183864"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 11,
+    "algorithm": "LIS (PD)",
+    "repetition": 2,
+    "result": 5,
+    "metrics": {
+      "execution_time": 6.157999450806528e-06,
+      "operations_count": 83,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183872"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 11,
+    "algorithm": "LIS (PD)",
+    "repetition": 3,
+    "result": 5,
+    "metrics": {
+      "execution_time": 6.10999995842576e-06,
+      "operations_count": 83,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183882"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 13,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 5,
+    "metrics": {
+      "execution_time": 3.69019981008023e-05,
+      "operations_count": 456,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.183965"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 13,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 5,
+    "metrics": {
+      "execution_time": 3.257299977121875e-05,
+      "operations_count": 456,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184001"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 13,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 5,
+    "metrics": {
+      "execution_time": 3.182599903084338e-05,
+      "operations_count": 456,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184036"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 13,
+    "algorithm": "LIS (PD)",
+    "repetition": 1,
+    "result": 5,
+    "metrics": {
+      "execution_time": 9.859002602752298e-06,
+      "operations_count": 123,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184050"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 13,
+    "algorithm": "LIS (PD)",
+    "repetition": 2,
+    "result": 5,
+    "metrics": {
+      "execution_time": 8.404000254813582e-06,
+      "operations_count": 123,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184060"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 13,
+    "algorithm": "LIS (PD)",
+    "repetition": 3,
+    "result": 5,
+    "metrics": {
+      "execution_time": 8.126997272484004e-06,
+      "operations_count": 123,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184070"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 15,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 6,
+    "metrics": {
+      "execution_time": 6.934299744898453e-05,
+      "operations_count": 916,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184190"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 15,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 6,
+    "metrics": {
+      "execution_time": 7.479899795725942e-05,
+      "operations_count": 916,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184270"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 15,
+    "algorithm": "LIS (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 6,
+    "metrics": {
+      "execution_time": 6.330799806164578e-05,
+      "operations_count": 916,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184337"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 15,
+    "algorithm": "LIS (PD)",
+    "repetition": 1,
+    "result": 6,
+    "metrics": {
+      "execution_time": 1.2365999282337725e-05,
+      "operations_count": 163,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184353"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 15,
+    "algorithm": "LIS (PD)",
+    "repetition": 2,
+    "result": 6,
+    "metrics": {
+      "execution_time": 1.091699959943071e-05,
+      "operations_count": 163,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184366"
+  },
+  {
+    "experiment": "LIS",
+    "parameter": 15,
+    "algorithm": "LIS (PD)",
+    "repetition": 3,
+    "result": 6,
+    "metrics": {
+      "execution_time": 1.0588002623990178e-05,
+      "operations_count": 163,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-28T23:42:14.184378"
+  }
+]
