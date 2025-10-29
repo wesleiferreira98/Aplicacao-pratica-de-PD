@@ -1,0 +1,26 @@
+# Configurações gerais do projeto
+
+# Configurações de visualização
+visualization:
+  default_style: "whitegrid"
+  figure_size: [12, 6]
+  dpi: 300
+  save_format: "png"
+
+# Configurações de experimentos
+experiments:
+  default_repetitions: 3
+  output_dir: "results/logs"
+  save_results: true
+
+# Configurações de datasets
+datasets:
+  random_seed: 42
+  default_sizes: [10, 50, 100, 500, 1000]
+  output_dir: "datasets/samples"
+
+# Configurações de logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  output_dir: "results/logs"

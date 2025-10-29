@@ -1,1 +1,0 @@
-# Subset Sum algorithm
