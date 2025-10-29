@@ -32,20 +32,20 @@ def show_menu():
 
 def run_lis_experiment():
     """Executa experimento LIS"""
-    from experiments.experiment_lis import run_lis_experiment
-    run_lis_experiment()
+    from experiments.experiment_lis import main as lis_main
+    lis_main()
 
 
 def run_edit_distance_experiment():
     """Executa experimento Edit Distance"""
-    from experiments.experiment_edit_distance import run_edit_distance_experiment
-    run_edit_distance_experiment()
+    from experiments.experiment_edit_distance import run_edit_distance_experiment as edit_main
+    edit_main()
 
 
 def run_subset_sum_experiment():
     """Executa experimento Subset Sum"""
-    from experiments.experiment_subset_sum import run_subset_sum_experiment
-    run_subset_sum_experiment()
+    from experiments.experiment_subset_sum import run_subset_sum_experiment as subset_main
+    subset_main()
 
 
 def run_all_experiments():

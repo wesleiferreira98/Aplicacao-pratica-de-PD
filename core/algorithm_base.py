@@ -31,6 +31,9 @@ class AlgorithmBase(ABC):
         """
         Método principal que resolve o problema.
         Deve ser implementado por cada algoritmo específico.
+        
+        Nota: Se você sobrescrever o método run(), pode deixar solve() 
+        retornando NotImplementedError.
         """
         pass
     
@@ -60,6 +63,16 @@ class AlgorithmBase(ABC):
             'operations_count': 0,
             'memory_usage': 0
         }
+    
+    def count(self, operations: int = 1):
+        """
+        Incrementa o contador de operações.
+        Método auxiliar para facilitar contagem durante execução.
+        
+        Args:
+            operations: Número de operações a incrementar (padrão: 1)
+        """
+        self.metrics['operations_count'] += operations
     
     def __str__(self):
         return f"Algorithm: {self.name}"

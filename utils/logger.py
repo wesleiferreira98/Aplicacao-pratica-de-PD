@@ -62,3 +62,18 @@ def get_default_logger(experiment_name: str = None):
         return setup_logger(experiment_name, log_file)
     else:
         return setup_logger("experiment")
+
+
+# Alias para conveniência
+def get_logger(name: str = None):
+    """
+    Alias para get_default_logger.
+    Retorna logger configurado para o módulo especificado.
+    
+    Args:
+        name: Nome do módulo/experimento
+        
+    Returns:
+        Logger configurado
+    """
+    return get_default_logger(name)

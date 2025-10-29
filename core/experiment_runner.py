@@ -118,3 +118,84 @@ class ExperimentRunner:
         summary['algorithm_stats'] = algo_stats
         
         return summary
+    
+    def run_series(
+        self,
+        algorithms: List[AlgorithmBase],
+        dataset_fn: Callable,
+        param_values: List[Any],
+        label: str = "experiment",
+        xlabel: str = "Input Size",
+        repetitions: int = 3
+    ):
+        """
+        Executa uma série de experimentos variando um parâmetro.
+        
+        Args:
+            algorithms: Lista de algoritmos a testar
+            dataset_fn: Função que gera dataset dado um parâmetro
+            param_values: Lista de valores de parâmetro para testar
+            label: Rótulo do experimento
+            xlabel: Rótulo do eixo X (parâmetro variado)
+            repetitions: Número de repetições por configuração
+        """
+        import matplotlib.pyplot as plt
+        
+        self.results = []
+        
+        # Estrutura para armazenar tempos por algoritmo
+        algo_times = {algo.name: [] for algo in algorithms}
+        
+        for param in param_values:
+            # Gerar dataset para este parâmetro
+            dataset = dataset_fn(param)
+            
+            for algo in algorithms:
+                times = []
+                
+                for rep in range(repetitions):
+                    algo.reset_metrics()
+                    
+                    # Executar algoritmo
+                    result_data = algo.run(*dataset)
+                    
+                    times.append(result_data['metrics']['execution_time'])
+                    
+                    self.results.append({
+                        'experiment': label,
+                        'parameter': param,
+                        'algorithm': algo.name,
+                        'repetition': rep + 1,
+                        'result': result_data['result'],
+                        'metrics': result_data['metrics'],
+                        'timestamp': datetime.now().isoformat()
+                    })
+                
+                # Média dos tempos
+                avg_time = sum(times) / len(times)
+                algo_times[algo.name].append(avg_time)
+        
+        # Salvar resultados
+        self.save_results()
+        
+        # Plotar gráfico
+        plt.figure(figsize=(10, 6))
+        
+        for algo_name, times in algo_times.items():
+            plt.plot(param_values, times, marker='o', label=algo_name)
+        
+        plt.xlabel(xlabel)
+        plt.ylabel('Tempo de Execução (s)')
+        plt.title(f'{label} - Comparação de Desempenho')
+        plt.legend()
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
+        
+        # Salvar figura
+        fig_path = self.output_dir / f"{label}_comparison.png"
+        plt.savefig(fig_path, dpi=300, bbox_inches='tight')
+        print(f"Gráfico salvo em: {fig_path}")
+        
+        plt.show()
+        
+        return self.results
