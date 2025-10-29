@@ -5,24 +5,25 @@ TODO: Implementar versão Divide and Conquer do LIS
 
 from core.algorithm_base import AlgorithmBase
 
-
-class LISDivideConquer(AlgorithmBase):
-    """
-    Implementação do Longest Increasing Subsequence usando Divide and Conquer
-    """
-    
+class LIS_DC(AlgorithmBase):
     def __init__(self):
-        super().__init__("LIS - Divide and Conquer")
-    
-    def solve(self, arr):
-        """
-        Encontra o tamanho da maior subsequência crescente.
-        
-        Args:
-            arr: Lista de números
-            
-        Returns:
-            Tamanho da LIS
-        """
-        # TODO: Implementar algoritmo
-        raise NotImplementedError("LIS Divide and Conquer ainda não implementado")
+        super().__init__("LIS (Divisão e Conquista)")
+
+    def lis_end(self, arr, i):
+        self.count()
+        if i == 0:
+            return 1
+        best = 1
+        for j in range(i):
+            self.count()
+            if arr[j] < arr[i]:
+                cand = self.lis_end(arr, j) + 1
+                self.count()
+                if cand > best:
+                    best = cand; self.count()
+        return best
+
+    def run(self, arr):
+        if not arr:
+            return 0
+        return max(self.lis_end(arr, i) for i in range(len(arr)))

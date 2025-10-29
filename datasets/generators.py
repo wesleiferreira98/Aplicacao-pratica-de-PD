@@ -145,3 +145,10 @@ class DataGenerator:
         random.shuffle(result)
         
         return result
+    
+    @staticmethod
+    def set_seed(seed: int) -> None:
+        """
+        Define a semente global para reprodutibilidade dos experimentos.
+        """
+        random.seed(seed)

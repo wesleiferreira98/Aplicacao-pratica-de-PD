@@ -5,25 +5,20 @@ TODO: Implementar versão Dynamic Programming do LIS
 
 from core.algorithm_base import AlgorithmBase
 
-
-class LISDynamicProgramming(AlgorithmBase):
-    """
-    Implementação do Longest Increasing Subsequence usando Programação Dinâmica
-    Complexidade: O(n²) ou O(n log n) com busca binária
-    """
-    
+class LIS_DP(AlgorithmBase):
     def __init__(self):
-        super().__init__("LIS - Dynamic Programming")
-    
-    def solve(self, arr):
-        """
-        Encontra o tamanho da maior subsequência crescente.
-        
-        Args:
-            arr: Lista de números
-            
-        Returns:
-            Tamanho da LIS
-        """
-        # TODO: Implementar algoritmo
-        raise NotImplementedError("LIS Dynamic Programming ainda não implementado")
+        super().__init__("LIS (PD)")
+
+    def run(self, arr):
+        n = len(arr)
+        if n == 0:
+            return 0
+        dp = [1] * n
+        for i in range(n):
+            self.count()
+            for j in range(i):
+                self.count()
+                if arr[j] < arr[i]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+                    self.count()
+        return max(dp)
