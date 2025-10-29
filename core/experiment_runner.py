@@ -126,7 +126,8 @@ class ExperimentRunner:
         param_values: List[Any],
         label: str = "experiment",
         xlabel: str = "Input Size",
-        repetitions: int = 3
+        repetitions: int = 3,
+        show_plot: bool = False
     ):
         """
         Executa uma série de experimentos variando um parâmetro.
@@ -138,6 +139,7 @@ class ExperimentRunner:
             label: Rótulo do experimento
             xlabel: Rótulo do eixo X (parâmetro variado)
             repetitions: Número de repetições por configuração
+            show_plot: Se True, exibe o gráfico interativo (padrão: False)
         """
         import matplotlib.pyplot as plt
         
@@ -179,6 +181,11 @@ class ExperimentRunner:
         self.save_results()
         
         # Plotar gráfico
+        import matplotlib
+        if not show_plot:
+            matplotlib.use('Agg')  # Backend não-interativo
+        import matplotlib.pyplot as plt
+        
         plt.figure(figsize=(10, 6))
         
         for algo_name, times in algo_times.items():
@@ -196,6 +203,9 @@ class ExperimentRunner:
         plt.savefig(fig_path, dpi=300, bbox_inches='tight')
         print(f"Gráfico salvo em: {fig_path}")
         
-        plt.show()
+        if show_plot:
+            plt.show()
+        else:
+            plt.close()
         
         return self.results

@@ -4,6 +4,11 @@ Comparação entre Divisão e Conquista (DC) e Programação Dinâmica (PD)
 """
 
 import os
+import sys
+
+# Adicionar diretório raiz ao path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from paradigms.divide_and_conquer.lis_dc import LIS_DC
 from paradigms.dynamic_programming.lis_dp import LIS_DP
 from core.experiment_runner import ExperimentRunner
@@ -34,7 +39,7 @@ def main():
     os.makedirs(outdir, exist_ok=True)
 
     # Inicializa o executor
-    runner = ExperimentRunner(outdir)
+    runner = ExperimentRunner(name="LIS", output_dir=outdir)
 
     # Algoritmos
     algos = [
