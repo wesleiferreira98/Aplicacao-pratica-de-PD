@@ -1,29 +1,38 @@
-"""
-Subset Sum - Divide and Conquer
-TODO: Implementar versão Divide and Conquer do Subset Sum
-"""
-
 from core.algorithm_base import AlgorithmBase
 
-
-class SubsetSumDivideConquer(AlgorithmBase):
-    """
-    Implementação do Subset Sum usando Divide and Conquer
-    """
-    
+class SubsetSum_DC(AlgorithmBase):
     def __init__(self):
-        super().__init__("Subset Sum - Divide and Conquer")
+        super().__init__("Subset Sum (Backtracking)")
     
-    def solve(self, arr, target):
-        """
-        Verifica se existe um subconjunto com soma igual ao target.
+    def solve(self, S, target):
+        """Implementação usando solve() - chamado por run() da classe base"""
+        return self._subset_sum_algorithm(S, target)
+    
+    def _subset_sum_algorithm(self, S, target):
+        """Implementação do algoritmo Subset Sum usando Backtracking/D&C"""
+        return self._bt(S, 0, target)
+
+    def _bt(self, S, i, target):
+        self.count()
+        if target == 0:
+            return True
+        if i == len(S) or target < 0:
+            return False
+        # Escolhe ou não escolhe o elemento atual
+        return self._bt(S, i + 1, target) or self._bt(S, i + 1, target - S[i])
+
+    def run(self, S, target):
+        """Sobrescreve run para medir tempo corretamente"""
+        import time
+        start = time.perf_counter()
+        result = self._subset_sum_algorithm(S, target)
+        end = time.perf_counter()
         
-        Args:
-            arr: Lista de números
-            target: Soma alvo
-            
-        Returns:
-            True se existe, False caso contrário
-        """
-        # TODO: Implementar algoritmo
-        raise NotImplementedError("Subset Sum Divide and Conquer ainda não implementado")
+        return {
+            'result': result,
+            'metrics': {
+                'execution_time': end - start,
+                'operations_count': self.metrics['operations_count'],
+                'memory_usage': 0
+            }
+        }

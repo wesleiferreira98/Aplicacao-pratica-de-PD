@@ -1,0 +1,392 @@
+[
+  {
+    "experiment": "EditDistance",
+    "parameter": 2,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 1,
+    "metrics": {
+      "execution_time": 8.322000212501734e-06,
+      "operations_count": 19,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049241"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 2,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 1,
+    "metrics": {
+      "execution_time": 3.360000846441835e-06,
+      "operations_count": 19,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049264"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 2,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 1,
+    "metrics": {
+      "execution_time": 2.474000211805105e-06,
+      "operations_count": 19,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049270"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 2,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 1,
+    "result": 1,
+    "metrics": {
+      "execution_time": 7.4359995778650045e-06,
+      "operations_count": 20,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049282"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 2,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 2,
+    "result": 1,
+    "metrics": {
+      "execution_time": 3.984001523349434e-06,
+      "operations_count": 20,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049288"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 2,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 3,
+    "result": 1,
+    "metrics": {
+      "execution_time": 3.188004484400153e-06,
+      "operations_count": 20,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049294"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 4,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 1,
+    "metrics": {
+      "execution_time": 7.328799983952194e-05,
+      "operations_count": 481,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049423"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 4,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 1,
+    "metrics": {
+      "execution_time": 5.7514000218361616e-05,
+      "operations_count": 481,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049483"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 4,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 1,
+    "metrics": {
+      "execution_time": 5.56110026082024e-05,
+      "operations_count": 481,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049541"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 4,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 1,
+    "result": 1,
+    "metrics": {
+      "execution_time": 1.250999775948003e-05,
+      "operations_count": 62,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049558"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 4,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 2,
+    "result": 1,
+    "metrics": {
+      "execution_time": 6.6540014813654125e-06,
+      "operations_count": 62,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049567"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 4,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 3,
+    "result": 1,
+    "metrics": {
+      "execution_time": 6.059002771507949e-06,
+      "operations_count": 62,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.049576"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 6,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 2,
+    "metrics": {
+      "execution_time": 0.0015106740029295906,
+      "operations_count": 13483,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.051132"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 6,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 2,
+    "metrics": {
+      "execution_time": 0.0014782450016355142,
+      "operations_count": 13483,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.052613"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 6,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 2,
+    "metrics": {
+      "execution_time": 0.00148423600330716,
+      "operations_count": 13483,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.054100"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 6,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 1,
+    "result": 2,
+    "metrics": {
+      "execution_time": 1.2387994502205402e-05,
+      "operations_count": 128,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.054115"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 6,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 2,
+    "result": 2,
+    "metrics": {
+      "execution_time": 1.0514006135053933e-05,
+      "operations_count": 128,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.054127"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 6,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 3,
+    "result": 2,
+    "metrics": {
+      "execution_time": 1.0033996659331024e-05,
+      "operations_count": 128,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.054139"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 8,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 2,
+    "metrics": {
+      "execution_time": 0.0451597529972787,
+      "operations_count": 398593,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.099345"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 8,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 2,
+    "metrics": {
+      "execution_time": 0.044276818000071216,
+      "operations_count": 398593,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.143635"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 8,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 2,
+    "metrics": {
+      "execution_time": 0.04399975099659059,
+      "operations_count": 398593,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.187647"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 8,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 1,
+    "result": 2,
+    "metrics": {
+      "execution_time": 2.6390000130049884e-05,
+      "operations_count": 218,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.187684"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 8,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 2,
+    "result": 2,
+    "metrics": {
+      "execution_time": 1.743500615702942e-05,
+      "operations_count": 218,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.187704"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 8,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 3,
+    "result": 2,
+    "metrics": {
+      "execution_time": 1.645299926167354e-05,
+      "operations_count": 218,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:39.187722"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 10,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 1,
+    "result": 2,
+    "metrics": {
+      "execution_time": 1.3463612259947695,
+      "operations_count": 12146179,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:40.534212"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 10,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 2,
+    "result": 2,
+    "metrics": {
+      "execution_time": 1.3445486780037754,
+      "operations_count": 12146179,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:41.878782"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 10,
+    "algorithm": "Edit Distance (Divisão e Conquista)",
+    "repetition": 3,
+    "result": 2,
+    "metrics": {
+      "execution_time": 1.3430915040007676,
+      "operations_count": 12146179,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:43.221899"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 10,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 1,
+    "result": 2,
+    "metrics": {
+      "execution_time": 3.192699659848586e-05,
+      "operations_count": 332,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:43.221951"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 10,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 2,
+    "result": 2,
+    "metrics": {
+      "execution_time": 2.6529000024311244e-05,
+      "operations_count": 332,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:43.221980"
+  },
+  {
+    "experiment": "EditDistance",
+    "parameter": 10,
+    "algorithm": "Edit Distance (PD)",
+    "repetition": 3,
+    "result": 2,
+    "metrics": {
+      "execution_time": 2.5280001864302903e-05,
+      "operations_count": 332,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:16:43.222007"
+  }
+]

@@ -1,35 +1,30 @@
 from core.algorithm_base import AlgorithmBase
 
-class EditDistance_DP(AlgorithmBase):
+class EditDistance_DC(AlgorithmBase):
     def __init__(self):
-        super().__init__("Edit Distance (PD)")
+        super().__init__("Edit Distance (Divisão e Conquista)")
     
     def solve(self, a: str, b: str):
         """Implementação usando solve() - chamado por run() da classe base"""
         return self._edit_distance_algorithm(a, b)
     
     def _edit_distance_algorithm(self, a: str, b: str) -> int:
-        """Implementação do algoritmo Edit Distance usando DP"""
-        n, m = len(a), len(b)
-        dp = [[0]*(m+1) for _ in range(n+1)]
+        """Implementação do algoritmo Edit Distance usando D&C"""
+        return self._dist(a, b)
 
-        for i in range(n+1):
-            dp[i][0] = i; self.count()
-        for j in range(m+1):
-            dp[0][j] = j; self.count()
+    def _dist(self, a: str, b: str) -> int:
+        self.count()
+        if not a:
+            return len(b)
+        if not b:
+            return len(a)
 
-        for i in range(1, n+1):
-            self.count()
-            for j in range(1, m+1):
-                self.count()
-                cost = 0 if a[i-1] == b[j-1] else 1; self.count()
-                dp[i][j] = min(
-                    dp[i-1][j] + 1,
-                    dp[i][j-1] + 1,
-                    dp[i-1][j-1] + cost
-                ); self.count()
-
-        return dp[n][m]
+        cost = 0 if a[-1] == b[-1] else 1
+        return min(
+            self._dist(a[:-1], b) + 1,      # deleção
+            self._dist(a, b[:-1]) + 1,      # inserção
+            self._dist(a[:-1], b[:-1]) + cost  # substituição ou match
+        )
 
     def run(self, a: str, b: str):
         """Sobrescreve run para medir tempo corretamente"""

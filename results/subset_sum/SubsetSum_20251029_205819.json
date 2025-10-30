@@ -1,0 +1,392 @@
+[
+  {
+    "experiment": "SubsetSum",
+    "parameter": 8,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 7.96499807620421e-06,
+      "operations_count": 36,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.279559"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 8,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 3.956993168685585e-06,
+      "operations_count": 36,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.279572"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 8,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 3.4729964681901038e-06,
+      "operations_count": 36,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.279579"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 8,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 4.14140013162978e-05,
+      "operations_count": 433,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.279628"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 8,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 3.9685000956524163e-05,
+      "operations_count": 433,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.279670"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 8,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 3.1194998882710934e-05,
+      "operations_count": 433,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.279703"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 10,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.00010370199743192643,
+      "operations_count": 1022,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.279863"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 10,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 9.51469992287457e-05,
+      "operations_count": 1022,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.279961"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 10,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 9.366499580210075e-05,
+      "operations_count": 1022,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.280057"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 10,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.00024164900241885334,
+      "operations_count": 3301,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.280302"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 10,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.00022500899649458006,
+      "operations_count": 3301,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.280529"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 10,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0002237879962194711,
+      "operations_count": 3301,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.280755"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 12,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0002578850035206415,
+      "operations_count": 2811,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.281055"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 12,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.00025873399863485247,
+      "operations_count": 2811,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.281316"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 12,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0002535430030548014,
+      "operations_count": 2811,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.281571"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 12,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0004092309973202646,
+      "operations_count": 5689,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.281983"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 12,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.00040540299960412085,
+      "operations_count": 5689,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.282390"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 12,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0003879180003423244,
+      "operations_count": 5689,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.282780"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 14,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0002845719936885871,
+      "operations_count": 3073,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.283102"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 14,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0002917420060839504,
+      "operations_count": 3073,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.283396"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 14,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.00027977900026598945,
+      "operations_count": 3073,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.283678"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 14,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0005503130014403723,
+      "operations_count": 7589,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.284231"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 14,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0005169139985810034,
+      "operations_count": 7589,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.284750"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 14,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.000525167997693643,
+      "operations_count": 7589,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.285277"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 16,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 1.7483995179645717e-05,
+      "operations_count": 164,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.285343"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 16,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 1.562100078444928e-05,
+      "operations_count": 164,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.285362"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 16,
+    "algorithm": "Subset Sum (Backtracking)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 1.4605000615119934e-05,
+      "operations_count": 164,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.285382"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 16,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 1,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0001178759994218126,
+      "operations_count": 1601,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.285504"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 16,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 2,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.0001098870052373968,
+      "operations_count": 1601,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.285619"
+  },
+  {
+    "experiment": "SubsetSum",
+    "parameter": 16,
+    "algorithm": "Subset Sum (PD)",
+    "repetition": 3,
+    "result": true,
+    "metrics": {
+      "execution_time": 0.00010859400208573788,
+      "operations_count": 1601,
+      "memory_usage": 0
+    },
+    "timestamp": "2025-10-29T20:58:19.285731"
+  }
+]

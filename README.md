@@ -92,21 +92,22 @@ python experiments/experiment_edit_distance.py
 python experiments/experiment_subset_sum.py
 ```
 
-## Algoritmos
+## 📊 Algoritmos
 
 ### Programação Dinâmica
 
-- [ ] **LIS** - Longest Increasing Subsequence
-- [ ] **Edit Distance** (Levenshtein)
-- [ ] **Subset Sum**
+- [x] **LIS** - Longest Increasing Subsequence ✅
+- [x] **Edit Distance** (Levenshtein) ✅
+- [x] **Subset Sum** ✅
 
 ### Divisão e Conquista
 
-- [ ] **LIS** - Longest Increasing Subsequence
-- [ ] **Subset Sum**
+- [x] **LIS** - Longest Increasing Subsequence ✅
+- [x] **Edit Distance** (Recursão sem memoização) ✅
 
 ### Backtracking
 
+- [x] **Subset Sum** (Exploração de subconjuntos) ✅
 - [ ] **N-Queens**
 
 ## Métricas Coletadas

@@ -38,13 +38,13 @@ def run_lis_experiment():
 
 def run_edit_distance_experiment():
     """Executa experimento Edit Distance"""
-    from experiments.experiment_edit_distance import run_edit_distance_experiment as edit_main
+    from experiments.experiment_edit_distance import main as edit_main
     edit_main()
 
 
 def run_subset_sum_experiment():
     """Executa experimento Subset Sum"""
-    from experiments.experiment_subset_sum import run_subset_sum_experiment as subset_main
+    from experiments.experiment_subset_sum import main as subset_main
     subset_main()
 
 
