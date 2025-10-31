@@ -19,8 +19,10 @@ log = get_logger(__name__)
 
 def dataset(n: int):
     DataGenerator.set_seed(42)
-    S, T = DataGenerator.generate_subset_sum_instance(n, max_val=50)
-    log.info(f"Instância para n={n}: {S} | Target={T}")
+    # worst_case=True força o pior caso do DC (target impossível)
+    # Isso faz o backtracking explorar toda a árvore (2^n nós)
+    S, T = DataGenerator.generate_subset_sum_instance(n, max_val=50, worst_case=True)
+    log.info(f"Instância para n={n}: {S} | Target={T} (impossível - pior caso)")
     return (S, T)
 
 def main():
@@ -28,8 +30,9 @@ def main():
     os.makedirs(outdir, exist_ok=True)
     runner = ExperimentRunner(name="SubsetSum", output_dir=outdir)
     algos = [SubsetSum_DC(), SubsetSum_DP()]
-    n_values = [8, 10, 12, 14, 16]  # Cuidado com n>18, o backtracking explode
-    log.info("Iniciando experimento Subset Sum...")
+    # Aumentei até n=18 para mostrar crescimento exponencial do DC
+    n_values = [8, 10, 12, 14, 16, 18]
+    log.info("Iniciando experimento Subset Sum (PIOR CASO - target impossível)...")
     runner.run_series(algos, dataset, n_values, label="SubsetSum", xlabel="Tamanho do conjunto (n)")
     log.info("Experimento finalizado com sucesso!")
 

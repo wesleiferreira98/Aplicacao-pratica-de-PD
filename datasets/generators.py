@@ -98,23 +98,31 @@ class DataGenerator:
         return str1, str2
     
     @staticmethod
-    def generate_subset_sum_instance(size: int, max_val: int = 50) -> Tuple[List[int], int]:
+    def generate_subset_sum_instance(size: int, max_val: int = 50, worst_case: bool = True) -> Tuple[List[int], int]:
         """
         Gera instância do problema Subset Sum.
         
         Args:
             size: Tamanho do array
             max_val: Valor máximo dos elementos
+            worst_case: Se True, gera target impossível para forçar pior caso do backtracking
             
         Returns:
             Tupla (array, target_sum)
         """
         arr = DataGenerator.generate_random_array(size, 1, max_val)
         
-        # Gerar target que é alcançável (soma de um subconjunto aleatório)
-        subset_size = random.randint(1, size)
-        subset = random.sample(arr, subset_size)
-        target = sum(subset)
+        if worst_case:
+            # Pior caso para DC: target impossível (força exploração completa da árvore)
+            # Escolhe um valor que não pode ser alcançado por nenhum subconjunto
+            total_sum = sum(arr)
+            # Target = soma total + 1 (impossível de alcançar)
+            target = total_sum + 1
+        else:
+            # Gerar target que é alcançável (soma de um subconjunto aleatório)
+            subset_size = random.randint(1, size)
+            subset = random.sample(arr, subset_size)
+            target = sum(subset)
         
         return arr, target
     

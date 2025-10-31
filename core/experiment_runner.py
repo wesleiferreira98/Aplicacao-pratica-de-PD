@@ -180,28 +180,69 @@ class ExperimentRunner:
         # Salvar resultados
         self.save_results()
         
-        # Plotar gráfico
+        # Plotar gráfico com estilo moderno
         import matplotlib
         if not show_plot:
             matplotlib.use('Agg')  # Backend não-interativo
         import matplotlib.pyplot as plt
+        import seaborn as sns
         
-        plt.figure(figsize=(10, 6))
+        # Configurar estilo moderno
+        sns.set_style("darkgrid")
+        plt.rcParams['figure.facecolor'] = '#f8f9fa'
+        plt.rcParams['axes.facecolor'] = '#ffffff'
         
-        for algo_name, times in algo_times.items():
-            plt.plot(param_values, times, marker='o', label=algo_name)
+        # Paleta de cores moderna e vibrante
+        colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F']
         
-        plt.xlabel(xlabel)
-        plt.ylabel('Tempo de Execução (s)')
-        plt.title(f'{label} - Comparação de Desempenho')
-        plt.legend()
-        plt.grid(True, alpha=0.3)
+        fig, ax = plt.subplots(figsize=(12, 7))
+        
+        # Plotar cada algoritmo com estilo aprimorado
+        for idx, (algo_name, times) in enumerate(algo_times.items()):
+            color = colors[idx % len(colors)]
+            ax.plot(param_values, times, 
+                   marker='o', 
+                   markersize=8,
+                   linewidth=2.5,
+                   label=algo_name,
+                   color=color,
+                   markeredgecolor='white',
+                   markeredgewidth=2,
+                   alpha=0.9)
+        
+        # Personalizar eixos e grid
+        ax.set_xlabel(xlabel, fontsize=12, fontweight='bold', color='#2c3e50')
+        ax.set_ylabel('Tempo de Execução (s)', fontsize=12, fontweight='bold', color='#2c3e50')
+        ax.set_title(f'{label} - Comparação de Desempenho', 
+                    fontsize=14, fontweight='bold', color='#2c3e50', pad=20)
+        
+        # Grid mais suave
+        ax.grid(True, alpha=0.2, linestyle='--', linewidth=1)
+        
+        # Legend com estilo
+        legend = ax.legend(loc='best', 
+                          frameon=True, 
+                          fancybox=True, 
+                          shadow=True,
+                          fontsize=10)
+        legend.get_frame().set_facecolor('#f8f9fa')
+        legend.get_frame().set_alpha(0.9)
+        
+        # Remover spines superiores e direitos
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['left'].set_color('#95a5a6')
+        ax.spines['bottom'].set_color('#95a5a6')
+        
+        # Ajustar ticks
+        ax.tick_params(colors='#2c3e50', labelsize=10)
+        
         plt.tight_layout()
         
         # Salvar figura
         fig_path = self.output_dir / f"{label}_comparison.png"
-        plt.savefig(fig_path, dpi=300, bbox_inches='tight')
-        print(f"Gráfico salvo em: {fig_path}")
+        plt.savefig(fig_path, dpi=300, bbox_inches='tight', facecolor='#f8f9fa')
+        print(f"📊 Gráfico salvo em: {fig_path}")
         
         if show_plot:
             plt.show()
